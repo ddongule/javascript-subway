@@ -1,7 +1,6 @@
 import Component from '../../core/Component';
 import { mainTemplate, stationItem, connectedLine } from './template/main.js';
 import { $ } from '../../utils/DOM.js';
-import division from '../../utils/division.js';
 import { MAP } from '../../constants/selector.js';
 import getSubwayState from '../../api/getState.js';
 

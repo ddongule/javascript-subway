@@ -14,7 +14,9 @@
     "build": "webpack",
     "build:prod": "webpack --mode=production",
     "start:dev": "webpack serve",
-    "test": "yarn cypress open"
+    "test": "yarn cypress open",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -31,6 +33,7 @@
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "2.22.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^5.3.1",
     "prettier": "^2.2.1",
     "style-loader": "^2.0.0",
@@ -40,5 +43,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3"
-  }
+  },
+  "homepage": "https://ddongule.github.io/javascript-subway"
 }
